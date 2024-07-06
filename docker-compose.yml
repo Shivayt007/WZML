@@ -33,5 +33,5 @@ services:
     command: bash start.sh
     restart: on-failure
     ports:
-      - "45:45"
-      - "8484:8484"
+      - "15:15"
+      - "8282:8282"
