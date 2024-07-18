@@ -6,7 +6,9 @@ from asyncio import create_subprocess_exec, gather, run as asyrun
 from uuid import uuid4
 from base64 import b64decode
 from importlib import import_module, reload
-
+import pyrogram
+pyrogram.utils.MIN_CHAT_ID = -999999999999
+pyrogram.utils.MIN_CHANNEL_ID = -100999999999999
 from requests import get as rget
 from pytz import timezone
 from bs4 import BeautifulSoup
