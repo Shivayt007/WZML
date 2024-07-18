@@ -2,6 +2,9 @@
 from tzlocal import get_localzone
 from pytz import timezone
 from datetime import datetime
+import pyrogram
+pyrogram.utils.MIN_CHAT_ID = -999999999999
+pyrogram.utils.MIN_CHANNEL_ID = -100999999999999
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from pyrogram import Client as tgClient, enums
 from pymongo import MongoClient
